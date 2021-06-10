@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
-	<title>Livello di stress per la ciclabilità sulle strade italiane</title>
+	<title>Livello di stress da traffico per la ciclabilità sulle strade italiane</title>
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 	<link href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css" rel="stylesheet">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
-<!-- Load the `mapbox-gl-geocoder` plugin. -->
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
-<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+	<!-- Load the `mapbox-gl-geocoder` plugin. -->
+	<script
+		src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+	<link rel="stylesheet"
+		href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css"
+		type="text/css">
 	<style>
 		body {
 			margin: 0;
@@ -23,93 +25,96 @@
 			width: 100%;
 		}
 
-                #maptitle {
-                    position: absolute;
-                    top:0;
-                    bottom: 0;
-                    display: block;
-                    overflow: auto;
-                    background: #eee;
-                    z-index:1;
-                    height:80px;
-                    padding: 10px;
-                }
+		#maptitle {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			display: block;
+			overflow: auto;
+			background: #eee;
+			z-index: 1;
+			height: 80px;
+			padding: 10px;
+		}
 
-                h1 {
-                    font: 36px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-                    font-weight: 600;
-                }
+		h1 {
+			font: 36px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+			font-weight: 600;
+		}
 
-                .filter-group {
-                    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-                    font-weight: 600;
-                    position: absolute;
-                    top: 150px;
-                    right: 10px;
-                    z-index: 1;
-                    border-radius: 3px;
-                    width: 230px;
-                    color: #fff;
-                }
+		.filter-group {
+			font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+			font-weight: 600;
+			position: absolute;
+			top: 150px;
+			right: 10px;
+			z-index: 1;
+			border-radius: 3px;
+			width: 230px;
+			color: #fff;
+		}
 
-                .filter-group input[type='checkbox']:first-child + label {
-                    border-radius: 3px 3px 0 0;
-                }
+		.filter-group input[type='checkbox']:first-child+label {
+			border-radius: 3px 3px 0 0;
+		}
 
-                .filter-group label:last-child {
-                    border-radius: 0 0 3px 3px;
-                    border: none;
-                }
+		.filter-group label:last-child {
+			border-radius: 0 0 3px 3px;
+			border: none;
+		}
 
-                .filter-group input[type='checkbox'] {
-                    display: none;
-                }
+		.filter-group input[type='checkbox'] {
+			display: none;
+		}
 
-                .filter-group input[type='checkbox'] + label {
-                    background-color: #3386c0;
-                    display: block;
-                    cursor: pointer;
-                    padding: 10px;
-                    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-                }
+		.filter-group input[type='checkbox']+label {
+			background-color: #3386c0;
+			display: block;
+			cursor: pointer;
+			padding: 10px;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+		}
 
-                .filter-group input[type='checkbox'] + label {
-                    background-color: #3386c0;
-                    text-transform: capitalize;
-                }
+		.filter-group input[type='checkbox']+label {
+			background-color: #3386c0;
+			text-transform: capitalize;
+		}
 
-                .filter-group input[type='checkbox'] + label:hover,
-                .filter-group input[type='checkbox']:checked + label {
-                    background-color: #4ea0da;
-                }
+		.filter-group input[type='checkbox']+label:hover,
+		.filter-group input[type='checkbox']:checked+label {
+			background-color: #4ea0da;
+		}
 
-                .filter-group input[type='checkbox']:checked + label:before {
-                    content: '✔';
-                    margin-right: 5px;
-                }
+		.filter-group input[type='checkbox']:checked+label:before {
+			content: '✔';
+			margin-right: 5px;
+		}
 	</style>
 </head>
 
 <body>
-    <div id="maptitle"><h1>Livello di stress per la ciclabilità sulle strade italiane</h1></div>
-    <div id="map"></div>
-    <nav id="filter-group" class="filter-group"></nav>
+	<div id="maptitle">
+		<h1>Livello di stress per la ciclabilità sulle strade italiane</h1>
+	</div>
+	<div id="map"></div>
+	<nav id="filter-group" class="filter-group"></nav>
 </body>
 <script src="js/config.js"></script>
 <script src="js/app.js"></script>
 <!-- Matomo -->
 <script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//stats.labmod.org/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '11']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
+	var _paq = window._paq = window._paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function () {
+		var u = "//stats.labmod.org/";
+		_paq.push(['setTrackerUrl', u + 'matomo.php']);
+		_paq.push(['setSiteId', '11']);
+		var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+		g.type = 'text/javascript'; g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+	})();
 </script>
 <!-- End Matomo Code -->
+
 </html>
