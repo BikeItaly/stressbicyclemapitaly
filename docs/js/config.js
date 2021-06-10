@@ -9,13 +9,16 @@ var levels={};
 levels["level_1"]={};
 levels["level_1"].visible=1;
 levels["level_1"].color='#0099cc';
+levels["level_1"].label="LTS 1 - Adatto ai bambini"
 levels["level_2"]={};
 levels["level_2"].visible=1;
 levels["level_2"].color='#1C7C54';
+levels["level_2"].label="LTS 2 - Basso Stress"
 levels["level_3"]={};
 levels["level_3"].visible=1;
 levels["level_3"].color='#F0C808';
+levels["level_3"].label="LTS 3 - Stress Moderato"
 levels["level_4"]={};
 levels["level_4"].visible=1;
 levels["level_4"].color='#DD5454';
-console.log(levels);
+levels["level_4"].label="LTS 4 - Stress Alto"

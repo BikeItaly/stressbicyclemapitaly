@@ -39,7 +39,6 @@ map.on('load', function () {
 });
 
 function getLevelsAndColors() {
-    console.log(levels);
     ret=[];
     for (var k in levels)  {
         ret.push(k);
@@ -51,16 +50,17 @@ function getLevelsAndColors() {
 var filterGroup = document.getElementById('filter-group');
 
 ["level_1","level_2","level_3","level_4"].forEach(function(layerID) {
-    console.log(layerID);
     var input = document.createElement('input');
     input.type = 'checkbox';
     input.id = layerID;
     input.checked = true;
+    input.style.backgroundColor=levels[layerID].color;
     filterGroup.appendChild(input);
 
     var label = document.createElement('label');
     label.setAttribute('for', layerID);
-    label.textContent = layerID;
+    label.textContent = levels[layerID].label;
+    label.style.backgroundColor=levels[layerID].color;
     filterGroup.appendChild(label);
 
      
