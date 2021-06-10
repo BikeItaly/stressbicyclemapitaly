@@ -39,20 +39,20 @@ map.on('load', function () {
 });
 
 map.on('load', function () {
-    map.addSource('stresslevels_layer', {
+    map.addSource(STRESSCYCLELEVES_SOURCEmin, {
         'type': 'vector',
         'tiles': [
-            'https://bikeitaly.github.io/stressbicyclemapitaly/stresslevels_layer/{z}/{x}/{y}.pbf'
+            STRESSCYCLELEVES_TILESETmin
         ],
         'minzoom': 5,
         'maxzoom': 11
     });
     map.addLayer(
         {
-            'id': 'id',
+            'id': STRESSCYCLELEVES_LAYERmin,
             'type': 'line',
-            'source': 'stresslevels_layer',
-            'source-layer': 'stress_traffic_roads_for_bicycles',
+            'source': STRESSCYCLELEVES_SOURCEmin,
+            'source-layer': STRESSCYCLELEVES_LAYERmin,
             'layout': {
                 'line-cap': 'round',
                 'line-join': 'round'
@@ -99,5 +99,6 @@ var filterGroup = document.getElementById('filter-group');
 
         var LevelsAndColors = getLevelsAndColors();
         map.setPaintProperty(STRESSCYCLELEVES_LAYER, 'line-color', ['match', ['string', ['get', 'level']], ...LevelsAndColors, '#AAAAAA']);
+        map.setPaintProperty(STRESSCYCLELEVES_LAYERmin, 'line-color', ['match', ['string', ['get', 'level']], ...LevelsAndColors, '#AAAAAA']);
     });
 });
