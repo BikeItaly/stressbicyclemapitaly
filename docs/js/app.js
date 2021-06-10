@@ -39,7 +39,7 @@ map.on('load', function () {
 });
 
 map.on('load', function () {
-    map.addSource('streeslevels', {
+    map.addSource('stresslevels', {
         'type': 'vector',
         'tiles': [
             'https://bikeitaly.github.io/stressbicyclemapitaly/stresslevels/{z}/{x}/{y}.pbf'
@@ -49,10 +49,10 @@ map.on('load', function () {
     });
     map.addLayer(
         {
-            'id': 'streeslevels',
+            'id': 'stresslevels',
             'type': 'line',
-            'source': 'streeslevels',
-            'source-layer': 'streeslevels',
+            'source': 'stresslevels',
+            'source-layer': 'stresslevels',
             'layout': {
                 'line-cap': 'round',
                 'line-join': 'round'
