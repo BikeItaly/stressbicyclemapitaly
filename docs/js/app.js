@@ -58,7 +58,7 @@ map.on('load', function () {
                 'line-join': 'round'
             },
             'paint': {
-                'line-color': 'rgb(53, 175, 109)',
+                'line-color': ['match', ['string', ['get', 'level']], ...LEVELSANDCOLORS, '#AAAAAA'],
                 'line-width': 2
             }
         }
