@@ -18,7 +18,7 @@ map.on('load', function () {
     map.addSource(STRESSCYCLELEVES_SOURCE, {
         type: 'vector',
         url: STRESSCYCLELEVES_TILESET,
-        minzoom: 12,
+        minzoom: 14,
         maxzoom: 22
     });
     map.addLayer({
