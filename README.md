@@ -1,6 +1,6 @@
 # stressbicyclemapitaly
 
-mappa dello stress da traffico in bicicletta a Trento - basato sui modelli definiti da [BikeOttawa](https://github.com/BikeOttawa)
+mappa dello stress da traffico in bicicletta in Italia- basato sui modelli definiti da [BikeOttawa](https://github.com/BikeOttawa)
 
 
 Codice sorgente originario
@@ -9,4 +9,3 @@ Codice sorgente originario
 - criteri con cui è stato fatto il calcolo<br/>http://www.northeastern.edu/peter.furth/research/level-of-traffic-stress/
 
 
-Mappa online<br/>https://napo.github.io/trentocyclestressmap/
