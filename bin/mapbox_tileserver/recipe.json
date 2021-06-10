@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "layers": {
+    "stresslevels": {
+      "source": "mapbox://tileset-source/napo/stress_cycle_levels",
+      "minzoom": 6,
+      "maxzoom": 16
+    }
+  }
+}
+
