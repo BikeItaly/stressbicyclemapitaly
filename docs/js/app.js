@@ -42,7 +42,7 @@ map.on('load', function () {
     map.addSource('streeslevels', {
         'type': 'vector',
         'tiles': [
-            'https://bikeitaly.github.io/stressbicyclemapitaly/data/stresslevels/{z}/{x}/{y}.pbf'
+            'https://bikeitaly.github.io/stressbicyclemapitaly/stresslevels/{z}/{x}/{y}.pbf'
         ],
         'minzoom': 5,
         'maxzoom': 11
