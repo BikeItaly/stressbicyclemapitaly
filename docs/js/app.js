@@ -39,7 +39,7 @@ map.on('load', function () {
 });
 
 map.on('load', function () {
-    map.addSource('stresslevels', {
+    map.addSource('stresslevels_layer', {
         'type': 'vector',
         'tiles': [
             'https://bikeitaly.github.io/stressbicyclemapitaly/stresslevels/{z}/{x}/{y}.pbf'
@@ -49,10 +49,10 @@ map.on('load', function () {
     });
     map.addLayer(
         {
-            'id': 'stresslevels',
+            'id': 'stresslevels_layer',
             'type': 'line',
-            'source': 'stresslevels',
-            'source-layer': 'stresslevels',
+            'source': 'stresslevels_layer',
+            'source-layer': 'stresslevels_layer',
             'layout': {
                 'line-cap': 'round',
                 'line-join': 'round'
@@ -62,8 +62,7 @@ map.on('load', function () {
                 'line-color': 'rgb(53, 175, 109)',
                 'line-width': 2
             }
-        },
-        'waterway-label'
+        }
     );
 });
 
