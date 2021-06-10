@@ -1,5 +1,6 @@
 var MAPBOX_TOKEN = 'pk.eyJ1IjoibmFwbyIsImEiOiJ5dG5HeDFZIn0.v4diQq5k3tVzeyRdjYks_A';
-var MAPBOX_STYLE = 'mapbox://styles/mapbox/streets-v11';
+//var MAPBOX_STYLE = 'mapbox://styles/mapbox/streets-v11';
+var MAPBOX_STYLE = 'mapbox://styles/mapbox/light-v10';
 var STRESSCYCLELEVES_TILESET = 'mapbox://napo.stress_cycle_levels'
 var STRESSCYCLELEVES_SOURCE = 'stress_cycle_levels'
 var STRESSCYCLELEVES_LAYER = 'stresslevels'
