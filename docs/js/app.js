@@ -49,10 +49,10 @@ map.on('load', function () {
     });
     map.addLayer(
         {
-            'id': 'stresslevels_layer',
+            'id': 'stress_traffic_roads_for_bicycles',
             'type': 'line',
-            'source': 'stresslevels_layer',
-            'source-layer': 'stresslevels_layer',
+            'source': 'stress_traffic_roads_for_bicycles',
+            'source-layer': 'stress_traffic_roads_for_bicycles.dbf',
             'layout': {
                 'line-cap': 'round',
                 'line-join': 'round'
