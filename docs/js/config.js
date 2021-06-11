@@ -4,7 +4,7 @@ var STRESSCYCLELEVES_TILESET = 'mapbox://napo.stress_cycle_levels'
 var STRESSCYCLELEVES_SOURCE = 'stress_cycle_levels'
 var STRESSCYCLELEVES_LAYER = 'stresslevels'
 var STRESSCYCLELEVES_SOURCEmin = 'stresslevels_layer'
-var STRESSCYCLELEVES_TILESETmin = 'https://bikeitaly.github.io/stressbicyclemapitaly/stresslevels_layer/{z}/{x}/{y}.pbf'
+var STRESSCYCLELEVES_TILESETmin = 'https://bicistressatedaltraffico.it/stresslevels_layer/{z}/{x}/{y}.pbf'
 var STRESSCYCLELEVES_LAYERmin ='stress_traffic_roads_for_bicycles'
 LEVELSANDCOLORS = ['level_1', '#0099cc', 'level_2', '#1C7C54','level_3','#F0C808','level_4','#DD5454'];
 
