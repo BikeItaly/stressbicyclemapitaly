@@ -15,17 +15,17 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    display: block;
-    overflow: auto;
     background: #eee;
     z-index: 1;
-    height: 80px;
-    padding: 10px;
+    display: inline;
+    height: min-content;
+    padding: 5px;
 }
 
 h1 {
     font: 36px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-weight: 600;
+    font-size: 3vw;
 }
 
 .filter-group {
