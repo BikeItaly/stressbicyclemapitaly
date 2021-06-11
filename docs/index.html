@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<meta charset="utf-8">
 	<title>Livello di stress da traffico per la ciclabilità sulle strade italiane</title>
 	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+	<meta name="description"
+		content="Livello di stress da traffico per la ciclabilità sulle strade italiane">
+			<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://bicistressatedaltraffico.it">
+	<meta property="og:title" content="Livello di stress per la ciclabilità sulle strade italiane">
+	<meta property="og:description"
+		content="Livello di stress da traffico per la ciclabilità sulle strade italiane">
+	<meta property="og:image"
+		content="https://bicistressatedaltraffico.it/img/placeholder.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://bicistressatedaltraffico.it">
+	<meta property="twitter:title" content="Livello di stress da traffico per la ciclabilità sulle strade italiane">
+	<meta property="twitter:description"
+		content="Livello di stress da traffico per la ciclabilità sulle strade italiane">
+	<meta property="twitter:image"
+		content="https://bicistressatedaltraffico.it/img/placeholder.png">
+
+
+
 	<link href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css" rel="stylesheet">
 	<script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
 	<!-- Load the `mapbox-gl-geocoder` plugin. -->
@@ -12,13 +38,16 @@
 	<link rel="stylesheet"
 		href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css"
 		type="text/css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 	<div id="maptitle">
-		<h1>Livello di stress per la ciclabilità sulle strade italiane</h1>
+		<h1>Il livello di "stress" della ciclabilità sulle strade italiane</h1>
+		<small>ogni strada ha una sua posizione che, in relazione alle altre, può creare uno "stress" per il
+			ciclista</small>
 	</div>
 	<div id="map"></div>
 	<nav id="filter-group" class="filter-group"></nav>
