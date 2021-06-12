@@ -19,5 +19,5 @@ I livelli di stress da traffico per un percorso vengono composti a partire dai s
 
 ## Codice sorgente originario
 - mappa<br/>https://github.com/rcmc2020/stressmap/
-- calcolo dello stress<br/>https://github.com/BikeOttawa/stressmodel
+- calcolo dello stress<br/>https://github.com/BikeItaly/stressmodel (fork italiano https://github.com/BikeOttawa/stressmodel)
 - criteri con cui è stato fatto il calcolo<br/>http://www.northeastern.edu/peter.furth/research/level-of-traffic-stress/
