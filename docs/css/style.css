@@ -14,11 +14,11 @@ body {
 #maptitle {
     position: absolute;
     top: 0;
-    bottom: 0;
     background: #eee;
     z-index: 1;
     display: inline;
     height: min-content;
+    width: 80vw;
     padding: 5px;
 }
 
