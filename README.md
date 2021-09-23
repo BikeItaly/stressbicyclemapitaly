@@ -1,6 +1,9 @@
-# stressbicyclemapitaly
-
+# stress bicycle map italy
 Mappa dello stress da traffico in bicicletta in Italia- basato sui modelli definiti da [BikeOttawa](https://github.com/BikeOttawa)
+
+Ne parliamo anche qui 
+
+https://medium.com/tantotanto/lo-stress-dei-percorsi-ciclabili-ee7573ec8284
 
 ## Significato dei livelli
 
