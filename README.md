@@ -5,6 +5,10 @@ Ne parliamo anche qui
 
 https://medium.com/tantotanto/lo-stress-dei-percorsi-ciclabili-ee7573ec8284
 
+E qui alcune slide
+
+https://bit.ly/percorsiciclabilistress
+
 ## Significato dei livelli
 
 Il livello di stress da traffico (LST) è una categorizzazione applicata a un segmento di strada o un incrocio e indica lo stress da traffico che grava sui ciclisti. 
