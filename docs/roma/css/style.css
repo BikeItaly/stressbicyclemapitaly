@@ -1,0 +1,13 @@
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border: 1px solid #9e9e9e;
+    border-radius: 5px;
+}
+.legend {
+    line-height: 18px;
+    color: #555;
+}
